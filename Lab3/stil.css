@@ -24,6 +24,18 @@ header {
 	transform: rotate(360deg);
 }
 }
+.slaid {
+    animation-name: rightrun;
+    animation-duration: 1.5s;
+ }
+ @keyframes rightrun {
+ 0%{
+ 	transform: translateX(-1920px);
+ }
+ 100%{
+ 	transform: translateX(0px);
+ }
+ }
 ul.menu {
   list-style: none;
   margin: 0;
@@ -44,7 +56,12 @@ ul.menu {
   border-right: 1px solid #677B27;
 }
 .menu a:hover {
-  background:gray;
+	position: relative;
+  transition-property: background-color, color;
+  transition-duration: 0.4s;
+  transition-timing-function: ease-out;
+  background-color:gray;
+  color:white;
 }
 .menu li {
   float:left;
@@ -62,7 +79,10 @@ ul.menu {
     }
 .menu li:hover > ul > li {
         float:none;
-    }
+		}
+.li1 {
+	width:120px;
+}
 .round {
 	float: left;
     border-radius: 30px;

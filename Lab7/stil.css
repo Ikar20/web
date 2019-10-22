@@ -8,6 +8,12 @@ header {
 }
 .body{
 	background-color: #17181c;
+	color: gray;
+}
+.body1{
+	color: gray;
+}
+.body2{
 	color: white;
 }
 .nav {
@@ -136,4 +142,7 @@ p{
 .footer {
 	text-align: center;
 	background-color: #17181c;
+}
+.footer1 {
+	text-align: center;
 }

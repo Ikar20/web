@@ -6,10 +6,6 @@ body {
 header {
   text-align: center;
 }
-.body{
-	background-color: #17181c;
-	color: white;
-}
 .nav {
 	text-align: right;
 }
@@ -122,9 +118,6 @@ h1,h2 {
 	text-align: center;
 	color: white;
 }
-.text{
-	font-size: 2em;
-}
 p{
 	color: white;
 	margin: inherit;
@@ -135,5 +128,4 @@ p{
  }
 .footer {
 	text-align: center;
-	background-color: #17181c;
 }

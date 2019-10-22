@@ -1,0 +1,14 @@
+CACHE MANIFEST
+# version v1.0
+CACHE:
+index.html
+Admin.html
+css/stil.css
+css/bootstrap.min.css
+stil.css
+error1.html
+
+NETWORK:
+*
+FALLBACK:
+/ error1.html
