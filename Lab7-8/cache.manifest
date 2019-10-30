@@ -1,0 +1,18 @@
+CACHE MANIFEST
+
+CACHE:
+index.html
+css/style.css
+css/bootstrap.min.css
+stil.css
+admin.html
+error.html
+
+NETWORK:
+*
+
+FALLBACK:
+News.html /error.html
+Fans appeal.html /error.html
+Tour schedule.html /error.html
+Concert venue.html /error.html
