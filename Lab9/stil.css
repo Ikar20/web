@@ -6,6 +6,16 @@ body {
 header {
   text-align: center;
 }
+.body{
+	background-color: #17181c;
+	color: gray;
+}
+.body1{
+	color: gray;
+}
+.body2{
+	color: white;
+}
 .nav {
 	text-align: right;
 }
@@ -118,6 +128,9 @@ h1,h2 {
 	text-align: center;
 	color: white;
 }
+.text{
+	font-size: 2em;
+}
 p{
 	color: white;
 	margin: inherit;
@@ -127,5 +140,9 @@ p{
     height: 100%;
  }
 .footer {
+	text-align: center;
+	background-color: #17181c;
+}
+.footer1 {
 	text-align: center;
 }

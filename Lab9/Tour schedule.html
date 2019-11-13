@@ -6,11 +6,9 @@
     <link rel="stylesheet" href="stil.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="css/bootstrap.min.css" >
-    <script src="function.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Pangolin" rel="stylesheet">
 		<title>Skillet</title>
 </head>
-<body  class="body">
+<body class="body">
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 		<a href="index.html" class="navbar-brand logo">
 			<img src="images/logo.jpg" width="250" height="100" alt="logo">
@@ -39,47 +37,37 @@
 		</div>
   </div>
 	</nav>
-  <content class="container">
-		<br><br><br>
-		<h2 class="text-center">Зверненя фанів</h2><br>
-		<div class="container" id="comment-field">
-		</div>
-		<br><br>
-		<div class="container">
-			<div class="row">
-        <div class="col-md-3">
-          <br><button type="button" class="btn btn-dark pull-left" id="comment-add" >Опублікувати</button>
-        </div>
-      <div class="col-md-9">
-				<textarea class="form-control" rows="6" placeholder="Написати звернення..." id="comment-body"></textarea>
-        <br>
-		</div>
-	</div>
-	</content>
+  <div class="container">
+    <br>
+    <br>
+    <h1 class="text-center">Розклад турів</h1>
+    <br>
+    <br>
+    <table class="table table-hover" >
+      <tr class="body2">
+        <th class="text-center">Тур</th>
+        <th class="text-center">Місто</th>
+        <th class="text-center">Дата проведення</th>
+      </tr>
+      <tr class="body2">
+        <td class="text-center">VICTORIOUS</td>
+        <td class="text-center">Stereo Plaza KYIV</td>
+        <td class="text-center">18.11.2019</td>
+      </tr>
+      <tr class="body2">
+        <td class="text-center">VICTORIOUS</td>
+        <td class="text-center">Malevich Club LVIV</td>
+        <td class="text-center">19.11.2019</td>
+      </tr>
+      <br>
+    </table>
+    <br>
+    <br>
+    <br>
+  </div>
   <footer>
   		<p class="footer"><img src="images/3.jpg" alt="footer"></p>
   </footer>
-	<script src="jquery-3.3.1.min.js"></script>
-  	<script src="bootstrap.min.js"></script>
-  	<script type="text/javascript">
-let comments = [];
-loadComments();
-document.getElementById('comment-add').onclick = function(){
-    let commentBody = document.getElementById('comment-body');
-    let comment = {
-        body : commentBody.value,
-        time : Math.floor(Date.now() / 1000)
-    }
-	if (commentBody.value =='') { alert("Заповніть поле коментаря");}
-	else if (commentBody.value == 0 ) { alert("Коментар не може містити пробіли");} else {
-    commentBody.value = '';
-    comments.push(comment);
-    saveComments();
-    showComments();
-};
-}
-  	</script>
-  	<script>jQuery('ul.nav > li').hover(function() { jQuery(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(); }, function() { jQuery(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(); })</script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 </body>

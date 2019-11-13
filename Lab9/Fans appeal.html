@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<html manifest="cache.manifest">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="stil.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+		<title>Skillet</title>
+</head>
+<body  class="body">
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<a href="index.html" class="navbar-brand logo">
+			<img src="images/logo.jpg" width="250" height="100" alt="logo">
+		</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse"
+			data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+    <div class="container">
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mx-auto">
+				<li class="nav-item active"><a href="index.html" class="nav-link">Main</a></li>
+				<li class="nav-item"><a href="News.html" class="nav-link">News</a></li>
+				<li class="dropdown nav-item">
+					<a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">For fans <snap class="caret"></snap></a>
+					<ul class="dropdown-menu bg-dark" role="menu">
+						<li class="dropdown-item bg-dark"><a class="nav-link" href="#">Fan club</a></li>
+						<li class="dropdown-item bg-dark"><a class="nav-link" href="Tour schedule.html">Tour schedule</a></li>
+						<li class="dropdown-item bg-dark"><a class="nav-link" href="#">Lyrics</a></li>
+					</ul>
+				</li>
+				<li class="nav-item"><a href="Fans appeal.html" class="nav-link">Fans appeal</a></li>
+				<li class="nav-item"><a href="Concert venue.html" class="nav-link">Concert venue</a></li>
+				<li class="nav-item"><a href="Admin.html" class="nav-link">Admin</a></li>
+			</ul>
+		</div>
+  </div>
+	</nav>
+  <content class="container">
+		<br><br><br>
+		<h2 class="text-center">Зверненя фанів</h2><br>
+		<div class="container" id="comment-field">
+		</div>
+		<br><br>
+		<div class="container">
+      <form>
+        <div class="row mt-3 p-3">
+          <div class="col-12 col-md-4">
+            <button type="button" onclick="newAppeal()" class="form-control btn btn-dark mb-3" value="Send">Send</button>
+          </div>
+          <div class="col-12 col-md-8" >
+            <textarea class="form-control" id="newAppealText" rows="7"></textarea>
+          </div>
+        </div>
+      </form>
+	</div>
+	</content>
+  <footer>
+  		<p class="footer"><img src="images/3.jpg" alt="footer"></p>
+  </footer>
+  <script type="text/javascript" src="js/storage.js"></script>
+	<script type="text/javascript" src="js/fans_appeal.js"></script>
+</body>
+</html>
