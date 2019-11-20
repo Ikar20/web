@@ -30,9 +30,9 @@ function showAppeals(showLast = false, existingAppeals = false){
 		var newDiv = document.createElement("div");
 		newDiv.className = "row mt-3 p-3 appeal";
 		var innerDiv1 = document.createElement("div");
-		innerDiv1.className = "col-4 col-md-2 justify-content-center text-center bg-light";
+		innerDiv1.className = "col-4 col-md-2 justify-content-center text-center bg-#17181c";
 		var innerDiv2 = document.createElement("div");
-		innerDiv2.className = "col-8 col-md-10 bg-light";
+		innerDiv2.className = "col-8 col-md-10 bg-#17181c";
 		newDiv.appendChild(innerDiv1);
 		newDiv.appendChild(innerDiv2);
 
