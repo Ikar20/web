@@ -1,16 +1,14 @@
-## A website about music band, called Depeche Mode.
-### This is a lab on Web Technologies and Web Development course.
+# web-tech-n-design
+Web technologies and design
 
-This website was made with educational purpose only and will never be used with commercial purpose.
+Good day
+So in order to run this server you need to install Node.js and MongoDB.
 
-### To run it on your machine
-1) You need to have node.js and npm installed
-2) Install needed npm modules:
-```
-npm install express
-npm isntall ejs
-```
-3) Run
-```
-node node.js
-```
+### Running server from console
+Then you go to the folder where there is a server run the command line and press the following commands:
+
+ npm install
+
+Then you run the server with a command:
+
+ node server.js

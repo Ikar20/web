@@ -39,33 +39,38 @@
 		</div>
   </div>
 	</nav>
-  <div class="container">
-		<form>
-			<div class="row mt-3 p-3">
-				<div class="col-12 col-md-4 mb-2 mb-md-0">
-					<input type="file" class="form-control btn btn-dark" onchange="addImg(this.files);" value="Upload photo">
-				</div>
-				<div class="col-12 col-md-8 text-center">
-					<img src="./images/empty.jpg" id="imgPreview" class="img-fluid">
-				</div>
-			</div>
-		</form>
-		<form>
-			<div class="row mt-3 p-3">
-				<div class="col-12 col-md-4 mb-2 mb-md-0">
-					<input type="button" class="form-control btn btn-dark" onclick="addNewsFromForm()" value="Send">
-				</div>
-				<div class="col-12 col-md-8 text-center">
-					<input type="text" class="form-control mb-2" id="newsTitle" placeholder="News title">
-					<textarea class="form-control" placeholder="News body" id="newsBody" rows="7"></textarea>
-				</div>
-			</div>
-		</form>
-	</div>
+  <main>
+      <article>
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-6 col-10 mx-auto p-3 order-1 order-md-2">
+                      <input type="file" name="newsImage" accept="image/*">
+                      <img id="uploadedImage" class="img-fluid mt-3" src="../img/neffexBestOfMe.jpg" alt="New image">
+                  </div>
+                  <div class="col-md-6 order-2 order-md-1 mx-auto m-3 text-center">
+                      <button id="addImageButton" class="btn btn-secondary pl-5 pr-5" type="button">Add image</button>
+                  </div>
+              </div>
+          </div>
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-6 col-10 mx-auto order-1 order-md-2 form-group">
+                      <label for="newsTitle"></label>
+                      <textarea id="newsTitle" class="form-control z-depth-1" rows="1" placeholder="News title"></textarea>
+                      <label for="newsBody"></label>
+                      <textarea id="newsBody" class="form-control z-depth-1" rows="6" placeholder="News body"></textarea>
+                  </div>
+                  <div class="col-md-6 order-2 order-md-1 mx-auto mt-4 text-center">
+                      <button id="sendNewsButton" class="btn btn-secondary pl-5 pr-5" type="button">Send</button>
+                  </div>
+              </div>
+          </div>
+      </article>
+  </main>
   <footer>
   		<p class="footer1"><img src="images/3.jpg" alt="footer"></p>
   </footer>
-  <script type="text/javascript" src="assets/js/storage.js"></script>
-  <script type="text/javascript" src="assets/js/news.js"></script>
+  <script type="text/javascript" src="js/storage.js"></script>
+	<script type="text/javascript" src="js/admin.js"></script>
 </body>
 </html>
