@@ -1,4 +1,4 @@
-# web-tech-n-design
+# web
 Web technologies and design
 
 Good day
